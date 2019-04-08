@@ -15,6 +15,4 @@ public class main {
 	System.out.print("Runtime: " + duration + " milliseconds.");
 	
 	}
-	
-	
 }

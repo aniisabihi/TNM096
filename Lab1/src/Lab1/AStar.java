@@ -4,7 +4,7 @@ public class AStar {
 	
 	public static void search(int[] startBoard)
 	{
-		
+
 	}
 	
 }
