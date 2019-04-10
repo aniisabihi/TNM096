@@ -26,10 +26,10 @@ start = time()
 
 
 # 2. Solve the puzzle; select ONLY one of the following algorithms
-depth_first_graph_search(puzzle)
+#depth_first_graph_search(puzzle)
 #backtracking_search(puzzle)
 #AC3(puzzle)
-#min_conflicts(puzzle)
+min_conflicts(puzzle)
 
 
 # 3. Print the results
