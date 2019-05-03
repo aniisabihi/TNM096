@@ -44,7 +44,7 @@ public class Board {
 		}
 
 		// Move left
-		if(emptyPos != 6 && emptyPos != 3 && emptyPos != 0)
+		if(emptyPos != 0 && emptyPos != 3 && emptyPos != 6)
 		{
 			saveMovedTiles(emptyPos, emptyPos-1, moves);
 		}
@@ -52,7 +52,7 @@ public class Board {
 		// Move right
 		if(emptyPos != 8 && emptyPos != 5 && emptyPos != 2)
 		{
-			saveMovedTiles(emptyPos, emptyPos+2, moves);
+			saveMovedTiles(emptyPos, emptyPos+1, moves);
 		}
 		
 		return moves; 
@@ -79,14 +79,24 @@ public class Board {
 
 	public void printBoard()
 	{
+		System.out.println("\n");
 		System.out.println(setupBoard[0] + " " + setupBoard[1] + " " + setupBoard[2]);
 		System.out.println(setupBoard[3] + " " + setupBoard[4] + " " + setupBoard[5]);
 		System.out.println(setupBoard[6] + " " + setupBoard[7] + " " + setupBoard[8]);
 	}
 
-	public int getWrongPlace()
+	public int findCost()
 	{
 		return wrongPlace; 
+	}
+	
+	public boolean finished()
+	{
+		if(Arrays.equals(setupBoard, goalBoard))
+		{
+			return true;
+		}else 
+			return false;
 	}
 	
 	public int getEmptyPos() {
@@ -100,14 +110,38 @@ public class Board {
 		return emptyPos;
 	}
 
-	public boolean done()
-	{
-		if(Arrays.equals(setupBoard, goalBoard)){return true;}
-		return false;
-	}
 	
 	public int[] getSetupBoard()
 	{
 		return setupBoard;
 	}
+	
+	public String boardToString() {
+        return Arrays.toString(setupBoard);
+    }
+	
+
+    public int setManDist() 
+    {
+        int index = -1;
+        int manDist = 0;
+
+        for (int y = 0; y < 3; y++) {
+            for (int x = 0; x < 3; x++) {
+                index++;
+                int value = setupBoard[index];
+
+                if (value != 0) {
+                    int h = (value - 1) % 3; // expected x-coordinate
+                    int v = (value -1 ) / 3; //expected y-coordinate
+                    int dx = h - x; // x- distance
+                    int dy = v - y; //y - distance
+
+                    manDist += Math.abs(dy) + Math.abs(dx);
+                }
+            }
+        }
+
+        return manDist;
+    }
 }

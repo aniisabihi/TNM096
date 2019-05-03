@@ -4,7 +4,7 @@ public class main {
 	
 	public static void main(String[] args) {
 	
-	int[] start = {2, 3, 8, 1, 4, 6, 0, 5, 7};
+	int[] start = {6, 4, 7, 8, 5, 0, 3, 2, 1};
 	
 	long timeStart = System.currentTimeMillis(); 
 	AStar.search(start);  
