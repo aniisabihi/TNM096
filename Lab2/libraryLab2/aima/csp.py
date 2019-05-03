@@ -223,7 +223,7 @@ def mac(csp, var, value, assignment, removals):
 
 # The search, proper
 
-# BT 
+# BT
 #def backtracking_search(csp, select_unassigned_variable = first_unassigned_variable, order_domain_values = unordered_domain_values, inference = no_inference):
 
 # BT+FC
