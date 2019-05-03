@@ -1,0 +1,46 @@
+
+squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(‡îÇš8–¸¥³ -HŠRMINORZ
+CODE_SMELL
+l
+squid:S106"9Replace this use of System.out or System.err by a logger.(‰ïóÑ8¸Õ² -H‹RMAJORZ
+CODE_SMELL
+›"squid:ClassVariableVisibilityCheck"MMake q a static final constant or non-public and provide accessors if needed.(‡îÇš8–¸¥³ -HŒRMINORZVULNERABILITY
+gsquid:S1118":Add a private constructor to hide the implicit public one.(Ã´¶éHRMAJORZ
+CODE_SMELL
+squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(õÛ¨çúÿÿÿÿHRMINORZ
+CODE_SMELL
+Rsquid:S2116"%Use "Arrays.toString(array)" instead.(Éç­´8–¸¥³ -HRMAJORZBUG
+‡squid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(‡îÇš8–¸¥³ -HRMINORZ
+CODE_SMELL
+’squid:S2293C"YReplace the type specification in this constructor call with the diamond operator ("<>").(ıÚô§ÿÿÿÿÿ8ò–É³ -H‘RMINORZ
+CODE_SMELL
+q
+squid:S106V"9Replace this use of System.out or System.err by a logger.(Ó»ËÌûÿÿÿÿ8ò–É³ -H’RMAJORZ
+CODE_SMELL
+’squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ï½¿Öøÿÿÿÿ8–¸¥³ -H“RMINORZ
+CODE_SMELL
+q
+squid:S106W"9Replace this use of System.out or System.err by a logger.(‰ş¬¬ıÿÿÿÿ8ò–É³ -H”RMAJORZ
+CODE_SMELL
+l
+squid:S106]"9Replace this use of System.out or System.err by a logger.(–û²8•®Ê³ -H•RMAJORZ
+CODE_SMELL
+Tsquid:S2386"Make this member "protected".(‡îÇš8–¸¥³ -H–RMINORZVULNERABILITY
+q
+squid:S106"9Replace this use of System.out or System.err by a logger.(«ÃÈ¥ÿÿÿÿÿ8–¸¥³ -H—RMAJORZ
+CODE_SMELL
+\squid:S1604"(Make this anonymous inner class a lambda(‡îÇš8–¸¥³ -H˜RMAJORZ
+CODE_SMELL
+‰squid:S3776"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(±Åº‡8ò–É³ -H™RCRITICALZ
+CODE_SMELL
+‰squid:S1149C"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ıÚô§ÿÿÿÿÿ8ò–É³ -HšRMAJORZ
+CODE_SMELL
+squid:S2293("YReplace the type specification in this constructor call with the diamond operator ("<>").(¤¤í¶8–¸¥³ -H›RMINORZ
+CODE_SMELL
+k
+squid:S106X"9Replace this use of System.out or System.err by a logger.(¿—–z8ò–É³ -HœRMAJORZ
+CODE_SMELL
+q
+squid:S106d"9Replace this use of System.out or System.err by a logger.(ˆøÃ’ıÿÿÿÿ8ò–É³ -HRMAJORZ
+CODE_SMELL
+^squid:S1444"'Make this "public static q" field final(‡îÇš8–¸¥³ -HRMINORZVULNERABILITY
