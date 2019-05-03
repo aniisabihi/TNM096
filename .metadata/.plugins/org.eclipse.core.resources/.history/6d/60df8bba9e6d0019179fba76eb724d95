@@ -1,0 +1,27 @@
+package Lab3;
+import java.util.Vector;
+
+public class Clause {
+	public Vector<String> negVec = new Vector<String>();
+	public Vector<String> posVec = new Vector<String>();
+	
+	Clause(){}
+	
+	Clause(String theString){
+		theString = theString.replaceAll(" ", "");
+		theString = theString.replaceAll("V", " ");
+		
+		String[] splittedString = theString.split(" ");
+		
+		for (int i = 0; i < splittedString.length; i++)
+		{
+			if(splittedString[i].contains("-"))
+			{
+				splittedString[i] = splittedString[i].replace("-", "");
+				negVec.addElement(splittedString[i]);
+			}else {
+				posVec.addElement(splittedString[i]);
+			}
+		}
+	}
+}

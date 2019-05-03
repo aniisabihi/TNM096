@@ -1,0 +1,7 @@
+package Lab3;
+import java.util.Vector;
+
+public class Clause {
+	public Vector<String> negVec = new Vector<String>();
+
+}

@@ -1,0 +1,12 @@
+package Lab3;
+
+import java.util.Vector;
+import java.util.ArrayList;
+
+public class Engine {
+	
+	public Vector<Clause> clauseVec = new Vector<Clause>();
+	
+	
+	
+}

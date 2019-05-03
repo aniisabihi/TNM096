@@ -1,3 +1,2 @@
 INDEX VERSION 1.130+D:\Dokument\Skolan\AI - grundkurs\Labbar\TNM096\.metadata\.plugins\org.eclipse.jdt.core
 1259207542.index
-2768476762.index

@@ -1,0 +1,11 @@
+package Lab3;
+
+import java.util.Vector;
+
+public class Engine {
+	
+	public Vector<Clause> clauseVec = new Vector<Clause>();
+	
+	
+	
+}
