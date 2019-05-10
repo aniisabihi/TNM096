@@ -1,0 +1,47 @@
+
+q
+squid:S106k"9Replace this use of System.out or System.err by a logger.(¢²²Çşÿÿÿÿ8´êòí§-H³RMAJORZ
+CODE_SMELL
+rsquid:S1155j">Use isEmpty() to check whether the collection is empty or not.(ëÑåŞ8´êòí§-H´RMINORZ
+CODE_SMELL
+squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ç†ĞµÿÿÿÿÿHµRMINORZ
+CODE_SMELL
+q
+squid:S106_"9Replace this use of System.out or System.err by a logger.(µŸŞ…şÿÿÿÿ8´êòí§-H¶RMAJORZ
+CODE_SMELL
+“squid:S3973G"WUse curly braces or indentation to denote the code conditionally executed by this "if".(†ğŒĞÿÿÿÿÿ8†–½í§-H·RCRITICALZ
+CODE_SMELL
+¥"squid:ClassVariableVisibilityCheck"RMake posVec a static final constant or non-public and provide accessors if needed.(­™¿šıÿÿÿÿ8í¹Øì§-H¸RMINORZVULNERABILITY
+q
+squid:S106f"9Replace this use of System.out or System.err by a logger.(¢²²Çşÿÿÿÿ8´êòí§-H¹RMAJORZ
+CODE_SMELL
+’squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¿ÿâÑúÿÿÿÿ8ùõÔì§-HºRMINORZ
+CODE_SMELL
+squid:S3973M"WUse curly braces or indentation to denote the code conditionally executed by this "if".(ĞÁã8†–½í§-H»RCRITICALZ
+CODE_SMELL
+l
+squid:S106d"9Replace this use of System.out or System.err by a logger.(¾«Ü8´êòí§-H¼RMAJORZ
+CODE_SMELL
+¥"squid:ClassVariableVisibilityCheck"RMake negVec a static final constant or non-public and provide accessors if needed.(¿ÿâÑúÿÿÿÿ8ùõÔì§-H½RMINORZVULNERABILITY
+’squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(­™¿šıÿÿÿÿ8í¹Øì§-H¾RMINORZ
+CODE_SMELL
+wsquid:S1155a">Use isEmpty() to check whether the collection is empty or not.(‚¿é¶ÿÿÿÿÿ8´êòí§-H¿RMINORZ
+CODE_SMELL
+}squid:S1206U"PThis class overrides "hashCode()" and should therefore also override "equals()".(ğÜşŠ8æûıå©-HÀRMINORZBUG
+l
+squid:S106o"9Replace this use of System.out or System.err by a logger.(ŞÀõ8´êòí§-HÁRMAJORZ
+CODE_SMELL
+squid:S1149"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(­™¿šıÿÿÿÿ8í¹Øì§-HÂRMAJORZ
+CODE_SMELL
+q
+squid:S106t"9Replace this use of System.out or System.err by a logger.(Ù—êÄşÿÿÿÿ8´êòí§-HÃRMAJORZ
+CODE_SMELL
+rsquid:S1155j">Use isEmpty() to check whether the collection is empty or not.(ëÑåŞ8´êòí§-HÄRMINORZ
+CODE_SMELL
+q
+squid:S106q"9Replace this use of System.out or System.err by a logger.(¢²²Çşÿÿÿÿ8´êòí§-HÅRMAJORZ
+CODE_SMELL
+wsquid:S1155m">Use isEmpty() to check whether the collection is empty or not.(ÓßÖíÿÿÿÿÿ8´êòí§-HÆRMINORZ
+CODE_SMELL
+squid:S1149"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(¿ÿâÑúÿÿÿÿ8ùõÔì§-HÇRMAJORZ
+CODE_SMELL

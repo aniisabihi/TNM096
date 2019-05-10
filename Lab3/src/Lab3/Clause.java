@@ -81,6 +81,15 @@ public class Clause {
 		return true;
 	}
 	
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((negVec == null) ? 0 : negVec.hashCode());
+		result = prime * result + ((posVec == null) ? 0 : posVec.hashCode());
+		return result;
+	}
+	
 	public void display(){
 
 		System.out.print("[");
@@ -111,6 +120,20 @@ public class Clause {
 	public boolean isEmpty() {
 	    return (negVec.size() + posVec.size()) == 0;
     }
+	
+	public boolean isContradictory(){
+		
+		for(int i=0; i<posVec.size(); i++){
+			for(int j=0; j<negVec.size(); j++){
+				
+				if(posVec.get(i).equals(negVec.get(j)))
+					return true;
+				
+			}
+		}
+		
+		return false;
+	}
 	
 	
 	

@@ -1,0 +1,122 @@
+package Lab3;
+
+import java.util.Vector;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+public class Engine {
+	
+	public Vector<Clause> clauseVec = new Vector<Clause>();
+	
+	Engine(String[] stringClauses)
+	{
+		for(int i = 0; i < stringClauses.length; i ++)
+		{
+			Clause c = new Clause(stringClauses[i]);
+			
+			if(!c.isEmpty())
+			{
+				clauseVec.addElement(c);
+				c.display();
+			}
+		}
+		
+	}
+	
+	public void Solver()
+	{
+		Clause S;
+		Vector<Clause> KB = new Vector<Clause>();
+		
+		do {
+			S = new Clause();
+			
+			for(int i = 0; i < clauseVec.size() -1; i++)
+			{
+				for(int j = i + 1; j < clauseVec.size(); j++)
+				{
+					S = resolution(clauseVec.get(i), clauseVec.get(j));
+					
+					if(S != null) {
+						KB.addElement(S);
+					}
+				}
+			}
+			
+			
+			
+			
+			
+		}while(S != null && !S.isEmpty());
+		
+	}
+	
+	public void Incorporate(Clause S, Vector<Clause> KB)
+	{
+		
+	}
+	
+	public void IncorporateClause(Clause A, Vector<Clause> KB)
+	{
+		
+	}
+	
+	
+	public Clause resolution(Clause A, Clause B)
+	{
+		String literal = null;
+		Clause newClause = new Clause();
+		
+		for (int i = 0; i < A.posVec.size(); i++)
+		{
+			if(B.negVec.contains(A.posVec.get(i)))
+				literal = B.posVec.get(i);
+		}
+		
+		for (int i = 0; literal == null && i < B.posVec.size(); i++)
+		{
+			if(A.negVec.contains(B.posVec.get(i)))
+			{
+				literal = B.posVec.get(i);
+			}
+		}
+		
+		if(literal != null)
+		{
+			for (int i = 0; i < A.posVec.size(); i++) {
+				if (!A.posVec.get(i).equals(literal) && !newClause.posVec.contains(A.posVec.get(i)))
+					newClause.posVec.add(A.posVec.get(i));
+			}
+
+			for (int i = 0; i < A.negVec.size(); i++) {
+				if (!A.negVec.get(i).equals(literal) && !newClause.negVec.contains(A.negVec.get(i)))
+					newClause.negVec.add(A.negVec.get(i));
+			}
+
+			for (int i = 0; i < B.posVec.size(); i++) {
+				if (!B.posVec.get(i).equals(literal) && !newClause.posVec.contains(B.posVec.get(i)))
+					newClause.posVec.add(B.posVec.get(i));
+			}
+
+			for (int i = 0; i < B.negVec.size(); i++) {
+				if (!B.negVec.get(i).equals(literal) && !newClause.negVec.contains(B.negVec.get(i)))
+					newClause.negVec.add(B.negVec.get(i));
+			}
+		}else {
+			return null;
+		}
+		
+		if(literal != null && newClause.isContradictory())
+		{
+			System.out.println("null");
+			return null;
+		}
+		
+		return newClause;
+		
+	}
+	
+}
