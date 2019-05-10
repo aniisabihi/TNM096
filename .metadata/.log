@@ -1,4 +1,4 @@
-!SESSION 2019-05-03 13:29:56.839 -----------------------------------------------
+!SESSION 2019-05-10 08:24:24.726 -----------------------------------------------
 eclipse.buildId=4.7.3.M20180330-0640
 java.version=1.8.0_161
 java.vendor=Oracle Corporation
@@ -7,9 +7,50 @@ Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
 This is a continuation of log file D:\Dokument\Skolan\AI - grundkurs\Labbar\TNM096\.metadata\.bak_0.log
-Created Time: 2019-05-03 14:12:09.408
+Created Time: 2019-05-10 08:39:15.227
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:09.411
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:15.228
+!MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.core.internal.net.ProxyManager.tryGetURI(ProxyManager.java:314)
+	at org.eclipse.core.internal.net.ProxyManager.getProxyDataForHost(ProxyManager.java:291)
+	at org.eclipse.core.internal.net.ProxyManager.getProxyDataForHost(ProxyManager.java:349)
+	at org.eclipse.core.internal.net.ProxyManager.select(ProxyManager.java:431)
+	at org.eclipse.ecf.provider.filetransfer.util.ProxySetupHelper.getProxy(ProxySetupHelper.java:40)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.setupProxies(AbstractRetrieveFileTransfer.java:952)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:884)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:146)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:424)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:360)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:101)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:192)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:255)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadIndexFile(AbstractRepositoryManager.java:735)
+	at sun.reflect.GeneratedMethodAccessor122.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadIndexFile(CachingRepositoryManager.java:374)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:182)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.loadMetadataRepository(ProvisioningContext.java:216)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedMetadataRepositories(ProvisioningContext.java:199)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getMetadata(ProvisioningContext.java:280)
+	at org.eclipse.equinox.internal.p2.director.SimplePlanner.updatesFor(SimplePlanner.java:784)
+	at org.eclipse.equinox.p2.operations.UpdateOperation.updatesFor(UpdateOperation.java:142)
+	at org.eclipse.equinox.p2.operations.UpdateOperation.computeProfileChangeRequest(UpdateOperation.java:179)
+	at org.eclipse.equinox.p2.operations.UpdateOperation$1.run(UpdateOperation.java:323)
+	at org.eclipse.equinox.internal.p2.operations.SearchForUpdatesResolutionJob.runModal(SearchForUpdatesResolutionJob.java:37)
+	at org.eclipse.equinox.p2.operations.ProfileChangeOperation.resolveModal(ProfileChangeOperation.java:115)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdater.updatesAvailable(AutomaticUpdater.java:117)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdater.updatesAvailable(AutomaticUpdater.java:98)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler$1.updatesAvailable(AutomaticUpdateScheduler.java:146)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:79)
+
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:15.231
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -23,7 +64,7 @@ java.lang.NullPointerException
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:09.415
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:15.233
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -37,7 +78,7 @@ java.lang.NullPointerException
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:09.420
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:15.235
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -51,7 +92,35 @@ java.lang.NullPointerException
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:09.430
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:15.237
+!MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.core.internal.net.ProxyManager.tryGetURI(ProxyManager.java:314)
+	at org.eclipse.core.internal.net.ProxyManager.getProxyDataForHost(ProxyManager.java:291)
+	at org.eclipse.core.internal.net.ProxyManager.getProxyDataForHost(ProxyManager.java:349)
+	at org.eclipse.core.internal.net.ProxyManager.select(ProxyManager.java:431)
+	at org.eclipse.ecf.provider.filetransfer.util.ProxySetupHelper.getProxy(ProxySetupHelper.java:40)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser.setupProxies(AbstractFileSystemBrowser.java:226)
+	at org.eclipse.ecf.provider.filetransfer.browse.URLFileSystemBrowser.runRequest(URLFileSystemBrowser.java:94)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:15.238
+!MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.core.internal.net.ProxyManager.tryGetURI(ProxyManager.java:314)
+	at org.eclipse.core.internal.net.ProxyManager.getProxyDataForHost(ProxyManager.java:291)
+	at org.eclipse.core.internal.net.ProxyManager.getProxyDataForHost(ProxyManager.java:349)
+	at org.eclipse.core.internal.net.ProxyManager.select(ProxyManager.java:431)
+	at org.eclipse.ecf.provider.filetransfer.util.ProxySetupHelper.getProxy(ProxySetupHelper.java:40)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser.setupProxies(AbstractFileSystemBrowser.java:226)
+	at org.eclipse.ecf.provider.filetransfer.browse.URLFileSystemBrowser.runRequest(URLFileSystemBrowser.java:94)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:15.242
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -74,7 +143,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.load(UpdateSiteMetadataRepositoryFactory.java:59)
 	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
 	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
-	at sun.reflect.GeneratedMethodAccessor336.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor116.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
@@ -97,7 +166,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler$1.updatesAvailable(AutomaticUpdateScheduler.java:146)
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:79)
 
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-05-03 14:12:12.300
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-05-10 08:39:17.714
 !MESSAGE Connection to http://org.eclipse.osgi.compatibility.plugins/p2.index failed on org.eclipse.osgi.compatibility.plugins. Retry attempt 0 started
 !STACK 0
 java.net.UnknownHostException: org.eclipse.osgi.compatibility.plugins
@@ -119,7 +188,7 @@ java.net.UnknownHostException: org.eclipse.osgi.compatibility.plugins
 	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:13.131
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:18.431
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.net.URISyntaxException: Expected authority at index 8: SOCKS://;children=[]]
 !STACK 0
 java.net.URISyntaxException: Expected authority at index 8: SOCKS://
@@ -139,7 +208,7 @@ java.net.URISyntaxException: Expected authority at index 8: SOCKS://
 	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:192)
 	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:255)
 	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadIndexFile(AbstractRepositoryManager.java:735)
-	at sun.reflect.GeneratedMethodAccessor342.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor122.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
@@ -162,7 +231,7 @@ java.net.URISyntaxException: Expected authority at index 8: SOCKS://
 	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler$1.updatesAvailable(AutomaticUpdateScheduler.java:146)
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:79)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:13.144
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:18.432
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -180,7 +249,7 @@ java.lang.NullPointerException
 	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:192)
 	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:255)
 	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadIndexFile(AbstractRepositoryManager.java:735)
-	at sun.reflect.GeneratedMethodAccessor342.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor122.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
@@ -203,7 +272,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler$1.updatesAvailable(AutomaticUpdateScheduler.java:146)
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:79)
 
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-05-03 14:12:13.150
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-05-10 08:39:18.434
 !MESSAGE Connection to http:/p2.index failed on URI does not specify a valid host name: http:/p2.index. Retry attempt 0 started
 !STACK 0
 org.apache.http.client.ClientProtocolException: URI does not specify a valid host name: http:/p2.index
@@ -215,7 +284,7 @@ org.apache.http.client.ClientProtocolException: URI does not specify a valid hos
 	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:13.356
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:18.636
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.net.URISyntaxException: Expected authority at index 8: SOCKS://;children=[]]
 !STACK 0
 java.net.URISyntaxException: Expected authority at index 8: SOCKS://
@@ -235,7 +304,7 @@ java.net.URISyntaxException: Expected authority at index 8: SOCKS://
 	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:192)
 	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:255)
 	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadIndexFile(AbstractRepositoryManager.java:735)
-	at sun.reflect.GeneratedMethodAccessor342.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor122.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
@@ -258,7 +327,7 @@ java.net.URISyntaxException: Expected authority at index 8: SOCKS://
 	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler$1.updatesAvailable(AutomaticUpdateScheduler.java:146)
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:79)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:13.363
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:18.637
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -276,7 +345,7 @@ java.lang.NullPointerException
 	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:192)
 	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:255)
 	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadIndexFile(AbstractRepositoryManager.java:735)
-	at sun.reflect.GeneratedMethodAccessor342.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor122.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
@@ -299,7 +368,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler$1.updatesAvailable(AutomaticUpdateScheduler.java:146)
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:79)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:13.382
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:18.640
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.net.URISyntaxException: Expected authority at index 8: SOCKS://;children=[]]
 !STACK 0
 java.net.URISyntaxException: Expected authority at index 8: SOCKS://
@@ -315,7 +384,7 @@ java.net.URISyntaxException: Expected authority at index 8: SOCKS://
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:13.389
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:18.641
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -329,7 +398,7 @@ java.lang.NullPointerException
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:13.399
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:18.642
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.net.URISyntaxException: Expected authority at index 8: SOCKS://;children=[]]
 !STACK 0
 java.net.URISyntaxException: Expected authority at index 8: SOCKS://
@@ -345,7 +414,7 @@ java.net.URISyntaxException: Expected authority at index 8: SOCKS://
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:13.404
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:18.643
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -359,7 +428,7 @@ java.lang.NullPointerException
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:16.423
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:21.159
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -377,7 +446,7 @@ java.lang.NullPointerException
 	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:192)
 	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:255)
 	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadIndexFile(AbstractRepositoryManager.java:735)
-	at sun.reflect.GeneratedMethodAccessor342.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor122.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
@@ -400,7 +469,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler$1.updatesAvailable(AutomaticUpdateScheduler.java:146)
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:79)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:16.444
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:21.166
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -414,7 +483,7 @@ java.lang.NullPointerException
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:16.453
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:21.171
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -428,7 +497,7 @@ java.lang.NullPointerException
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:16.463
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:21.173
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -442,7 +511,7 @@ java.lang.NullPointerException
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:16.473
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:21.176
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -456,7 +525,7 @@ java.lang.NullPointerException
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:16.481
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:21.178
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -470,7 +539,7 @@ java.lang.NullPointerException
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:16.502
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:21.182
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -493,7 +562,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.load(UpdateSiteMetadataRepositoryFactory.java:59)
 	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
 	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
-	at sun.reflect.GeneratedMethodAccessor336.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor116.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
@@ -516,7 +585,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler$1.updatesAvailable(AutomaticUpdateScheduler.java:146)
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:79)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:16.556
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:21.191
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -534,7 +603,7 @@ java.lang.NullPointerException
 	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:192)
 	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:255)
 	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadIndexFile(AbstractRepositoryManager.java:735)
-	at sun.reflect.GeneratedMethodAccessor342.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor122.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
@@ -557,7 +626,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler$1.updatesAvailable(AutomaticUpdateScheduler.java:146)
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:79)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:16.576
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:21.195
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -571,7 +640,7 @@ java.lang.NullPointerException
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:16.585
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:21.197
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -585,7 +654,7 @@ java.lang.NullPointerException
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:16.597
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:21.199
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -599,7 +668,7 @@ java.lang.NullPointerException
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:16.610
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:21.201
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -613,7 +682,7 @@ java.lang.NullPointerException
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:16.624
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:21.202
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -627,7 +696,7 @@ java.lang.NullPointerException
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:16.652
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:21.208
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -650,7 +719,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.load(UpdateSiteMetadataRepositoryFactory.java:59)
 	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
 	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
-	at sun.reflect.GeneratedMethodAccessor336.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor116.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
@@ -673,7 +742,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler$1.updatesAvailable(AutomaticUpdateScheduler.java:146)
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:79)
 
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-05-03 14:12:19.569
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-05-10 08:39:23.704
 !MESSAGE Connection to http://org.eclipse.osgi.compatibility.plugins/p2.index failed on org.eclipse.osgi.compatibility.plugins. Retry attempt 0 started
 !STACK 0
 java.net.UnknownHostException: org.eclipse.osgi.compatibility.plugins
@@ -698,7 +767,7 @@ java.net.UnknownHostException: org.eclipse.osgi.compatibility.plugins
 	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:22.308
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:24.637
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.net.URISyntaxException: Expected authority at index 8: SOCKS://;children=[]]
 !STACK 0
 java.net.URISyntaxException: Expected authority at index 8: SOCKS://
@@ -718,7 +787,7 @@ java.net.URISyntaxException: Expected authority at index 8: SOCKS://
 	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:192)
 	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:255)
 	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadIndexFile(AbstractRepositoryManager.java:735)
-	at sun.reflect.GeneratedMethodAccessor342.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor122.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
@@ -741,7 +810,7 @@ java.net.URISyntaxException: Expected authority at index 8: SOCKS://
 	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler$1.updatesAvailable(AutomaticUpdateScheduler.java:146)
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:79)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:22.317
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:24.638
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -759,7 +828,7 @@ java.lang.NullPointerException
 	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:192)
 	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:255)
 	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadIndexFile(AbstractRepositoryManager.java:735)
-	at sun.reflect.GeneratedMethodAccessor342.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor122.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
@@ -782,7 +851,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler$1.updatesAvailable(AutomaticUpdateScheduler.java:146)
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:79)
 
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-05-03 14:12:22.326
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-05-10 08:39:24.641
 !MESSAGE Connection to http:/p2.index failed on URI does not specify a valid host name: http:/p2.index. Retry attempt 0 started
 !STACK 0
 org.apache.http.client.ClientProtocolException: URI does not specify a valid host name: http:/p2.index
@@ -794,7 +863,7 @@ org.apache.http.client.ClientProtocolException: URI does not specify a valid hos
 	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:22.532
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:24.845
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.net.URISyntaxException: Expected authority at index 8: SOCKS://;children=[]]
 !STACK 0
 java.net.URISyntaxException: Expected authority at index 8: SOCKS://
@@ -814,7 +883,7 @@ java.net.URISyntaxException: Expected authority at index 8: SOCKS://
 	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:192)
 	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:255)
 	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadIndexFile(AbstractRepositoryManager.java:735)
-	at sun.reflect.GeneratedMethodAccessor342.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor122.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
@@ -837,7 +906,7 @@ java.net.URISyntaxException: Expected authority at index 8: SOCKS://
 	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler$1.updatesAvailable(AutomaticUpdateScheduler.java:146)
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:79)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:22.537
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:24.850
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -855,7 +924,7 @@ java.lang.NullPointerException
 	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:192)
 	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:255)
 	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadIndexFile(AbstractRepositoryManager.java:735)
-	at sun.reflect.GeneratedMethodAccessor342.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor122.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
@@ -878,7 +947,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler$1.updatesAvailable(AutomaticUpdateScheduler.java:146)
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:79)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:22.562
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:24.868
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.net.URISyntaxException: Expected authority at index 8: SOCKS://;children=[]]
 !STACK 0
 java.net.URISyntaxException: Expected authority at index 8: SOCKS://
@@ -894,7 +963,7 @@ java.net.URISyntaxException: Expected authority at index 8: SOCKS://
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:22.569
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:24.871
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -908,7 +977,7 @@ java.lang.NullPointerException
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:22.576
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:24.874
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.net.URISyntaxException: Expected authority at index 8: SOCKS://;children=[]]
 !STACK 0
 java.net.URISyntaxException: Expected authority at index 8: SOCKS://
@@ -924,7 +993,7 @@ java.net.URISyntaxException: Expected authority at index 8: SOCKS://
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:22.582
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:24.876
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -938,7 +1007,7 @@ java.lang.NullPointerException
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:25.926
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:27.395
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -956,7 +1025,7 @@ java.lang.NullPointerException
 	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:192)
 	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:255)
 	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadIndexFile(AbstractRepositoryManager.java:735)
-	at sun.reflect.GeneratedMethodAccessor342.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor122.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
@@ -979,7 +1048,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler$1.updatesAvailable(AutomaticUpdateScheduler.java:146)
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:79)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:25.945
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:27.400
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -993,7 +1062,7 @@ java.lang.NullPointerException
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:25.953
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:27.403
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -1007,7 +1076,7 @@ java.lang.NullPointerException
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:25.964
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:27.407
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -1021,7 +1090,7 @@ java.lang.NullPointerException
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:25.977
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:27.409
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -1035,7 +1104,7 @@ java.lang.NullPointerException
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:25.987
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:27.411
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -1049,7 +1118,7 @@ java.lang.NullPointerException
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:26.019
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:27.414
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -1072,7 +1141,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.load(UpdateSiteMetadataRepositoryFactory.java:59)
 	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
 	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
-	at sun.reflect.GeneratedMethodAccessor336.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor116.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
@@ -1095,7 +1164,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler$1.updatesAvailable(AutomaticUpdateScheduler.java:146)
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:79)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:26.086
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:27.422
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -1113,7 +1182,7 @@ java.lang.NullPointerException
 	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:192)
 	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:255)
 	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadIndexFile(AbstractRepositoryManager.java:735)
-	at sun.reflect.GeneratedMethodAccessor342.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor122.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
@@ -1136,7 +1205,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler$1.updatesAvailable(AutomaticUpdateScheduler.java:146)
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:79)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:26.098
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:27.426
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -1150,7 +1219,7 @@ java.lang.NullPointerException
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:26.103
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:27.427
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -1164,7 +1233,7 @@ java.lang.NullPointerException
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:26.110
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:27.429
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -1178,7 +1247,7 @@ java.lang.NullPointerException
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:26.115
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:27.431
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -1192,7 +1261,7 @@ java.lang.NullPointerException
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:26.118
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:27.433
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -1206,7 +1275,7 @@ java.lang.NullPointerException
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:26.127
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:27.437
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -1229,7 +1298,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.load(UpdateSiteMetadataRepositoryFactory.java:59)
 	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
 	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
-	at sun.reflect.GeneratedMethodAccessor336.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor116.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
@@ -1252,7 +1321,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler$1.updatesAvailable(AutomaticUpdateScheduler.java:146)
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:79)
 
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-05-03 14:12:29.036
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-05-10 08:39:29.876
 !MESSAGE Connection to http://org.eclipse.osgi.compatibility.plugins/p2.index failed on org.eclipse.osgi.compatibility.plugins. Retry attempt 0 started
 !STACK 0
 java.net.UnknownHostException: org.eclipse.osgi.compatibility.plugins
@@ -1274,7 +1343,7 @@ java.net.UnknownHostException: org.eclipse.osgi.compatibility.plugins
 	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:29.768
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:30.567
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.net.URISyntaxException: Expected authority at index 8: SOCKS://;children=[]]
 !STACK 0
 java.net.URISyntaxException: Expected authority at index 8: SOCKS://
@@ -1294,7 +1363,7 @@ java.net.URISyntaxException: Expected authority at index 8: SOCKS://
 	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:192)
 	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:255)
 	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadIndexFile(AbstractRepositoryManager.java:735)
-	at sun.reflect.GeneratedMethodAccessor342.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor122.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
@@ -1317,7 +1386,7 @@ java.net.URISyntaxException: Expected authority at index 8: SOCKS://
 	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler$1.updatesAvailable(AutomaticUpdateScheduler.java:146)
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:79)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:29.771
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:30.568
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -1335,7 +1404,7 @@ java.lang.NullPointerException
 	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:192)
 	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:255)
 	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadIndexFile(AbstractRepositoryManager.java:735)
-	at sun.reflect.GeneratedMethodAccessor342.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor122.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
@@ -1358,7 +1427,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler$1.updatesAvailable(AutomaticUpdateScheduler.java:146)
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:79)
 
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-05-03 14:12:29.774
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-05-10 08:39:30.569
 !MESSAGE Connection to http:/p2.index failed on URI does not specify a valid host name: http:/p2.index. Retry attempt 0 started
 !STACK 0
 org.apache.http.client.ClientProtocolException: URI does not specify a valid host name: http:/p2.index
@@ -1370,7 +1439,7 @@ org.apache.http.client.ClientProtocolException: URI does not specify a valid hos
 	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:29.979
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:30.772
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.net.URISyntaxException: Expected authority at index 8: SOCKS://;children=[]]
 !STACK 0
 java.net.URISyntaxException: Expected authority at index 8: SOCKS://
@@ -1390,7 +1459,7 @@ java.net.URISyntaxException: Expected authority at index 8: SOCKS://
 	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:192)
 	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:255)
 	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadIndexFile(AbstractRepositoryManager.java:735)
-	at sun.reflect.GeneratedMethodAccessor342.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor122.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
@@ -1413,7 +1482,7 @@ java.net.URISyntaxException: Expected authority at index 8: SOCKS://
 	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler$1.updatesAvailable(AutomaticUpdateScheduler.java:146)
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:79)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:29.983
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:30.774
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -1431,7 +1500,7 @@ java.lang.NullPointerException
 	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:192)
 	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:255)
 	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadIndexFile(AbstractRepositoryManager.java:735)
-	at sun.reflect.GeneratedMethodAccessor342.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor122.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
@@ -1454,7 +1523,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler$1.updatesAvailable(AutomaticUpdateScheduler.java:146)
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:79)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:29.997
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:30.783
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.net.URISyntaxException: Expected authority at index 8: SOCKS://;children=[]]
 !STACK 0
 java.net.URISyntaxException: Expected authority at index 8: SOCKS://
@@ -1470,7 +1539,7 @@ java.net.URISyntaxException: Expected authority at index 8: SOCKS://
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:30.001
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:30.785
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException
@@ -1484,7 +1553,7 @@ java.lang.NullPointerException
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:30.009
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:30.787
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.net.URISyntaxException: Expected authority at index 8: SOCKS://;children=[]]
 !STACK 0
 java.net.URISyntaxException: Expected authority at index 8: SOCKS://
@@ -1500,7 +1569,7 @@ java.net.URISyntaxException: Expected authority at index 8: SOCKS://
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-03 14:12:30.014
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2019-05-10 08:39:30.789
 !MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=Warning: Platform proxy API not available;severity2;exception=java.lang.NullPointerException;children=[]]
 !STACK 0
 java.lang.NullPointerException

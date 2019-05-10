@@ -1,5 +1,5 @@
 
-asquid:S1068")Remove this unused "gCost" private field.(ÖäÄ¬úÿÿÿÿ8éœ³ -HzRMAJORZ
+squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(õÛ¨çúÿÿÿÿH¯RMINORZ
 CODE_SMELL
-Œsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(õÛ¨çúÿÿÿÿH{RMINORZ
+bsquid:S1068")Remove this unused "gCost" private field.(ÖäÄ¬úÿÿÿÿ8éœ³ -H°RMAJORZ
 CODE_SMELL
