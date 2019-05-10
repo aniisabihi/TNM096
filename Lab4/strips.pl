@@ -1,3 +1,5 @@
+use warnings FATAL => 'all';
+use strict;
 % STRIPS planner
 
 plan :-
