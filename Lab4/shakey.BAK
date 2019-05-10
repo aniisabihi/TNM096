@@ -9,7 +9,7 @@
 
 % Action_Move_From_Room_To_Room
 act( move(FromRoom, ToRoom),                                                    % action name
-     [shakey(S), room(FromRoom), room(ToRoom), in(S, FromRoom),  on(S,floor), connect(FromRoom,ToRoom)],      % preconditions
+     [shakey(S), in(S, FromRoom),  on(S,floor), connect(FromRoom,ToRoom)],      % preconditions
      [in(S,FromRoom)],                                                          % delete
      [in(S,ToRoom)]                                                              % add
      ).
@@ -29,7 +29,7 @@ act( climbDown(Box),
 
 % Action_Move_Box_From_Room_To_Room
 act( pushBox(Box, PosA, PosB),
-     [shakey(S), box(Box), on(S,floor), in(S,PosA), in(Box, PosA), connect(PosA, PosB)],
+     [shakey(S), box(Box), on(S,floor), in(S,PosA), in(Box, PosA), connect(PosA, PosB)],  % (1)
      [in(S,PosA), in(Box, PosA)],
      [in(S,PosB), in(Box, PosB)]
      ).
